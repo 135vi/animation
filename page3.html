@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: grid;
+        place-content: center;
+        height: 500px;
+    }
+    section {
+        display: flex;
+        align-items: center;
+        width: 1000px;
+        outline: 5px double burlywood;
+        background-color: lightsalmon;
+        background-size: 50%;
+        transition: filter 0.3s;
+        overflow: hidden;
+    }
+    section:hover {
+        filter: grayscale(50%);
+    }
+    section:hover img {
+        transform: scale(1.2);
+    }
+    p {
+        width: 50%;
+        text-align: center;
+    }
+    .img {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+    img {
+        display: block;
+        transition: transform 1s;
+    }
+</style>
+<body>
+    <section>
+        <p>mandarins</p>
+        <div class="img">
+            <img src="mandarins.jpg" alt="mandarins">
+        </div>
+    </section>
+</body>
+</html>

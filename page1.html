@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hasy {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin: 5em;
+        border: 4px solid red;
+        border-radius: 50%;
+    }
+    .minuts {
+        position: absolute;
+        width: 10px;
+        height: 150px;
+        left: 249px;
+        top: 78px;
+        background: peru;
+        animation: now 1000ms infinite steps(1000);
+        transform-origin: 0 165px;
+    }
+    .has {
+        position: absolute;
+        width: 10px;
+        height: 100px;
+        left: 247px;
+        top: 130px;
+        background: orange;
+        animation: nov 1200ms infinite steps(1200);
+        transform-origin: 0 115px;
+    }
+    @keyframes now {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes nov {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .centr {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 220px;
+        left: 225px;
+        background: orangered;
+    }
+</style>
+<body>
+    <div class="hasy">
+        <div class="minuts"></div>
+        <div class="has"></div>
+        <div class="centr"></div>
+    </div>
+</body>
+</html>

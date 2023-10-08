@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        perspective: 1000px;
+    }
+    h5 {
+        position: absolute;
+        z-index: -1;
+    }
+    .door {
+        width: 300px;
+        height: 300px;
+        background-color: darkorange;
+        border: 3px double yellow;
+        transition: all 2s;
+    }
+    .right {
+        transform-origin: right;
+    }
+    .left {
+        transform-origin: left;
+    }
+    
+    .wrap:hover .right {
+        transform: rotateY(-50deg);
+    }
+    .wrap:hover .left {
+        transform: rotateY(50deg);
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="door left"></div>
+        <div class="door right"></div>
+        <h5>CLOSE THE DOORS, please</h5>
+    </div>
+</body>
+</html>
